@@ -14,7 +14,7 @@ function formatTime(seconds){
 async function getSongs() {
 
     
-    let a = await fetch("http://127.0.0.1:5500/spotifyproject/songs/");
+    let a = await fetch("http://127.0.0.1:5500//spotifyproject/songs/");
 
      
     let response = await a.text();
@@ -108,6 +108,11 @@ play.addEventListener("click",()=>{
         let percent = (e.offsetX/e.target.getBoundingClientRect().width)*100
         document.querySelector(".circle").style.left = percent+"%"
         currentSong.currentTime = ((currentSong.duration)*percent)/100
+    })
+
+    // Add an event listner for handburger
+    document.querySelector(".hamburger").addEventListener("click",() => {
+        document.querySelector(".left").style.left = "0"
     })
 
 }
