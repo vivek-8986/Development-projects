@@ -115,6 +115,10 @@ play.addEventListener("click",()=>{
         document.querySelector(".left").style.left = "0"
     })
 
+    // Add an event listner to cross buutons
+    document.querySelector(".close").addEventListener("click",() => {
+        document.querySelector(".left").style.left = "-120%"
+    })
 }
     
 main();

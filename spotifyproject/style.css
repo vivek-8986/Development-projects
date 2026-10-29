@@ -259,18 +259,18 @@ body{
     .left{
        
         position: absolute;
-        left: -100%;
+        left: -120%;
         transition: all .3s;
         z-index: 1;
-        width: 433px;
+        width: 360px;
         background-color: black;
     }
-    .left.close{
+    .left .close{
         position: absolute;
         right: 31px;
         top: 25px;
         width: 29px;
-        height: 29px;
+        
     }
     .right{
         width: 100vw;
